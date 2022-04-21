@@ -14,16 +14,22 @@ class Box{
         div.style.borderRadius = this.circle;
         div.style.backgroundColor = this.color;
         body.appendChild(div);
-        console.log('work')
+        
     }
 }
 
-const myBox = new Box(50,50,'red');
+let myBox = new Box(50,50,'red');
 
-console.log(myBox)
 
-for (let i = 0; i <= 9; i += 1){
-    myBox.render();
+
+for (let i = 1; i <= 10; i += 1){
+    if (i % 2 == 0){
+        myBox = new Box(50,50,'red');
+        myBox.render();
+    } else {
+        myBox = new Box(50,50,'blue');
+        myBox.render();
+    }
 }
 
 

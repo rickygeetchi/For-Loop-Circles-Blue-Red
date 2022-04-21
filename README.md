@@ -1,1 +1,1 @@
-For loop circles, only red
+For loop circles, blue and red
