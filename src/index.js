@@ -24,10 +24,10 @@ let myBox = new Box(50,50,'red');
 
 for (let i = 1; i <= 10; i += 1){
     if (i % 2 == 0){
-        myBox = new Box(50,50,'red');
+        myBox.color = 'red';
         myBox.render();
     } else {
-        myBox = new Box(50,50,'blue');
+        myBox.color = 'blue';
         myBox.render();
     }
 }
