@@ -18,18 +18,18 @@ class Circle{
     }
 }
 
-let myCircle = new Box(50,50,'red');
+let myCircle = new Circle(50,50,'red');
 
 
 
 for (let i = 1; i <= 10; i += 1){
     if (i % 2 == 0){
         myCircle.color = 'red';
-        myCircle.render();
+        
     } else {
         myCircle.color = 'blue';
-        myCircle.render();
-    }
+        
+    } myCircle.render();
 }
 
 
