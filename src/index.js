@@ -1,4 +1,4 @@
-class Box{
+class Circle{
     constructor(width, height, backgroundColor){
         this.color = backgroundColor;
         this.height = `${height}px`;
@@ -18,17 +18,17 @@ class Box{
     }
 }
 
-let myBox = new Box(50,50,'red');
+let myCircle = new Box(50,50,'red');
 
 
 
 for (let i = 1; i <= 10; i += 1){
     if (i % 2 == 0){
-        myBox.color = 'red';
-        myBox.render();
+        myCircle.color = 'red';
+        myCircle.render();
     } else {
-        myBox.color = 'blue';
-        myBox.render();
+        myCircle.color = 'blue';
+        myCircle.render();
     }
 }
 
